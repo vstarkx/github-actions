@@ -1,15 +1,4 @@
-name: lint
-
-on:
-  pull_request:
-    branches:
-      - main
-
-jobs:
-  linter:
-      runs-on: ubuntu-latest
-      steps:
-     name: Lint
+name: Lint
 
 on:
   pull_request:
