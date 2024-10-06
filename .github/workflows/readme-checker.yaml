@@ -1,4 +1,4 @@
-name: readme checker
+name: lint
 
 on:
   push:
@@ -6,11 +6,10 @@ on:
       - main
 
 jobs:
-  readme-checker:
+  linter:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
-        - name: step readme checker
+        - name: Run linters
           run: |
-              ls -ali; if [ ! -f README.md ]; then 
-                echo "Failed: README.md not found."; exit 1; fi
+                 flake8 . --count --select=E901,E902,E903,F401,F405 --show-source --statistics --exit-zero
