@@ -6,7 +6,6 @@ namespace MyNamespace
     {
         static void Main(string[] args)
         {
-            
         }
     }
 }

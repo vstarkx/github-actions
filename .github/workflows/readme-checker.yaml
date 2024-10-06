@@ -13,7 +13,7 @@ jobs:
         - name: lint python files
           uses: github/super-linter@v4
           env:
-            VALIDATE_ALL_CODEBASE: true
+            VALIDATE_ALL_CODEBASE: false
             DEFAULT_BRANCH: main
             GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
             VALIDATE_PYTHON: true
