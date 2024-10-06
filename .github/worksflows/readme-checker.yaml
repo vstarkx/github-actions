@@ -9,9 +9,9 @@ jobs:
   readme-checker:
       runs-on: ubuntu-latest
       steps:
-         - uses: actions/checkout@v2
-         - name: step readme checker
-           run: |
+        - uses: actions/checkout@v2
+        - name: step readme checker
+          run: |
              ls -ali
               if [ ! -f README.md] ; then
               exit 1 
