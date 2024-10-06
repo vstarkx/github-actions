@@ -1,10 +1,10 @@
-using system;
+using System;
 
-namespace myNamespace
+namespace MyNamespace
 {
-    class program
+    class Program
     {
-        static void main(string[] args)
+        static void Main(string[] args)
         {
             
         }
