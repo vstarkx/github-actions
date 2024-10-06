@@ -14,5 +14,5 @@ jobs:
           run: |
              ls -ali
               if [ ! -f README.md] ; then
-              exit 1 
+                exit 1 
               fi
