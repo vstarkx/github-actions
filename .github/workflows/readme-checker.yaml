@@ -13,4 +13,4 @@ jobs:
         - name: step readme checker
           run: |
               ls -ali; if [ ! -f README.md ]; then 
-                echo "Failed: README.md not found." exit 1; fi
+                echo "Failed: README.md not found."; exit 1; fi
