@@ -2,7 +2,7 @@ name: readme checker
 
 on:
   pull_request:
-    branchs:
+    branches:
       - main
 
 jobs:
