@@ -12,7 +12,7 @@ jobs:
         - uses: actions/checkout@v2
         - name: step readme checker
           run: |
-             ls -ali
+              ls -ali
               if [ ! -f README.md] ; then
                 exit 1 
               fi
